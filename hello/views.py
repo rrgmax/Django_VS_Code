@@ -4,7 +4,8 @@ from django.http import HttpResponse
 # Add these to existing imports at the top of the file:
 from django.shortcuts import redirect
 from hello.forms import LogMessageForm
-from hello.models import LogMessage
+from hello.models import LogMessagefrom django.views.generic import ListView
+
 
 #def home(request):
 #    return HttpResponse("Hello, Django!")
