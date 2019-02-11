@@ -1,5 +1,5 @@
-*.sqlite3
 __pychache__/
 *.pyc
+*.sqlite3
 launch.json
 web_project/__pycache__/urls.cpython-37.pyc
