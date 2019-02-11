@@ -3,7 +3,9 @@ from hello import views
 from hello.models import LogMessage
 
 urlpatterns = [
-    path("", views.home, name="home"),
+    #path("", views.home, name="home"),
+        # Replace the existing path for ""
+    path("", home_list_view, name="home"),
     path("hello/<name>", views.hello_there, name="hello_there"),
     path("about/", views.about, name="about"),
     path("contact/", views.contact, name="contact"),
