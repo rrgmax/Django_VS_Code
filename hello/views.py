@@ -1,3 +1,4 @@
+from django.shortcuts import render
 import re
 from datetime import datetime
 from django.http import HttpResponse
