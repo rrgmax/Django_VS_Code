@@ -6,3 +6,4 @@ static_collected/
 web_project/__pycache__/urls.cpython-37.pyc
 web_project/__pycache__/settings.cpython-37.pyc
 web_project/__pycache__/settings.cpython-37.pyc
+db.sqlite3
