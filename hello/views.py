@@ -10,8 +10,17 @@ from hello.models import LogMessagefrom django.views.generic import ListView
 #def home(request):
 #    return HttpResponse("Hello, Django!")
 # Replace the existing home function with the one below
-def home(request):
-    return render(request, "hello/home.html")
+#def home(request):
+#    return render(request, "hello/home.html")
+# Remove the old home function if you want; it's no longer used
+
+class HomeListView(ListView):
+    """Renders the home page, with a list of all messages."""
+    model = LogMessage
+
+    def get_context_data(self, **kwargs):
+        context = super(HomeListView, self).get_context_data(**kwargs)
+        return context
 
 def about(request):
     return render(request, "hello/about.html")
