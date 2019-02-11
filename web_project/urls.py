@@ -19,6 +19,8 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('', include('hello.urls')),
+    # This path is included by default when creating the app
+    path("admin/", admin.site.urls),
 
 ]
 
